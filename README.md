@@ -1,9 +1,18 @@
 ## 使用
 ```
-const StartingPatternWebpackPlugin =require('starting-pattern-webpack-plugin')
+const {defineConfig} = require('@vue/cli-service');
+const StartingPatternWebpackPlugin = require('starting-pattern-webpack-plugin');
 
-new StartingPatternWebpackPlugin({
-      type: 'type1',
-      color: 'green',
-    })
+module.exports = defineConfig({
+    transpileDependencies: true,
+    configureWebpack: {
+        plugins: [
+            new StartingPatternWebpackPlugin({
+                type: 'keyboard',
+                color: 'green',
+            })
+        ]
+    }
+});
+
 ```
