@@ -1,6 +1,10 @@
+## 安装
+```
+npm install starting-pattern-webpack-plugin -g
+```
+
 ## 使用
 ```
-const {defineConfig} = require('@vue/cli-service');
 const StartingPatternWebpackPlugin = require('starting-pattern-webpack-plugin');
 
 module.exports = defineConfig({
