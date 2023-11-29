@@ -1,6 +1,6 @@
 ## 安装
 ```
-npm install starting-pattern-webpack-plugin -g
+npm install starting-pattern-webpack-plugin -D
 ```
 
 ## 使用
